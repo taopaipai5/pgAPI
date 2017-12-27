@@ -1,10 +1,11 @@
-
 from flask_restplus import Api
-
 
 api = Api(version='0.1', title='Product Governance Audit API',
           description='Retrieve pg activity'
           )
+
+
+apiv2 = Api(version='0.1', title='Cost&Charges API')
 
 
 @api.errorhandler

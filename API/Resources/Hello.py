@@ -1,9 +1,8 @@
 from API.ApiManager import api
 from flask_restplus import Resource
-import re
-import uuid
 
 ns = api.namespace('hello', description='just say hello')
+
 
 @ns.route("/<string:name>")
 class HelloWorld(Resource):
@@ -12,7 +11,3 @@ class HelloWorld(Resource):
         if name is not None:
             mystr = name
         return {"Hello": mystr}
-
-
-
-

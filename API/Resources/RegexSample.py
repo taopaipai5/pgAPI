@@ -11,6 +11,7 @@ params = api.model('RegexParams', {
 ns = api.namespace('RegExSample', description='RegexTest')
 
 
+
 @ns.route("/")
 class RegExSample(Resource):
     @ns.expect(params)
